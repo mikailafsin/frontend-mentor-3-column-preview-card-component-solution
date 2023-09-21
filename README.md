@@ -69,7 +69,7 @@ button {
   font-weight: bold;
   border: 2px solid $veryLightGray;
 
-  &:hover {
+  &:active {
       background-color: transparent;
   }
 }
@@ -87,7 +87,7 @@ button {
   button {
     color: $brightOrange;
 
-    &:hover {
+    &:active {
       color: $veryLightGray;
     }
   }

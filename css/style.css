@@ -60,7 +60,7 @@ button {
   font-weight: bold;
   border: 2px solid hsl(0, 0%, 95%);
 }
-button:hover {
+button:active {
   background-color: transparent;
 }
 
@@ -90,7 +90,7 @@ button:hover {
 .cards .bright-orange-card button {
   color: hsl(31, 77%, 52%);
 }
-.cards .bright-orange-card button:hover {
+.cards .bright-orange-card button:active {
   color: hsl(0, 0%, 95%);
 }
 .cards .dark-cyan-card {
@@ -99,7 +99,7 @@ button:hover {
 .cards .dark-cyan-card button {
   color: hsl(184, 100%, 22%);
 }
-.cards .dark-cyan-card button:hover {
+.cards .dark-cyan-card button:active {
   color: hsl(0, 0%, 95%);
 }
 .cards .very-dark-cyan-card {
@@ -108,7 +108,7 @@ button:hover {
 .cards .very-dark-cyan-card button {
   color: hsl(179, 100%, 13%);
 }
-.cards .very-dark-cyan-card button:hover {
+.cards .very-dark-cyan-card button:active {
   color: hsl(0, 0%, 95%);
 }
 
