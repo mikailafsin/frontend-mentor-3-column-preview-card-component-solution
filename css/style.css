@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.container .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.container .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+  padding: 0.625rem 1.5rem;
+  border-radius: 1.5rem;
+  outline: none;
+  background-color: hsl(0, 0%, 95%);
+  font-weight: bold;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+button:hover {
+  background-color: transparent;
+}
+
+.card, .cards .very-dark-cyan-card, .cards .dark-cyan-card, .cards .bright-orange-card {
+  padding: 2.5rem;
+}
+
+.cards {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.cards .card-h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.cards .card-img,
+.cards .card-h1 {
+  margin-bottom: 2rem;
+}
+.cards .card-p {
+  margin-bottom: 1.875rem;
+  line-height: 1.5rem;
+}
+.cards .bright-orange-card {
+  background-color: hsl(31, 77%, 52%);
+}
+.cards .bright-orange-card button {
+  color: hsl(31, 77%, 52%);
+}
+.cards .bright-orange-card button:hover {
+  color: hsl(0, 0%, 95%);
+}
+.cards .dark-cyan-card {
+  background-color: hsl(184, 100%, 22%);
+}
+.cards .dark-cyan-card button {
+  color: hsl(184, 100%, 22%);
+}
+.cards .dark-cyan-card button:hover {
+  color: hsl(0, 0%, 95%);
+}
+.cards .very-dark-cyan-card {
+  background-color: hsl(179, 100%, 13%);
+}
+.cards .very-dark-cyan-card button {
+  color: hsl(179, 100%, 13%);
+}
+.cards .very-dark-cyan-card button:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (min-width: 1400px) {
+  body {
+    min-height: 100vh;
+  }
+  button {
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .card, .cards .bright-orange-card, .cards .dark-cyan-card, .cards .very-dark-cyan-card {
+    padding: 3rem;
+    width: 25%;
+  }
+  .container {
+    padding: initial;
+    max-width: calc(1400px - 12.5%);
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: initial;
+    overflow: initial;
+  }
+  .cards .card-h1 {
+    font-size: 3rem;
+  }
+  .cards .card-p {
+    margin-bottom: 5rem;
+    line-height: 1.625rem;
+  }
+  .cards .bright-orange-card {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  .cards .very-dark-cyan-card {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

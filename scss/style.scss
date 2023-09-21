@@ -1,0 +1,170 @@
+@import "fonts";
+@import "colors";
+@import "reset";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    background-color: $veryLightGray;
+    font-family: $lexendDeca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5rem 0;
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1.5rem;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: $bigShoulder;
+    color: $veryLightGray;
+}
+
+p {
+    color: $transparentWhite;
+}
+
+button {
+    padding: .625rem 1.5rem;
+    border-radius: 1.5rem;
+    outline: none;
+    background-color: $veryLightGray;
+    font-weight: bold;
+    border: 2px solid $veryLightGray;
+
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.card {
+    padding: 2.5rem;
+}
+
+.cards {
+    border-radius: .5rem;
+    overflow: hidden;
+
+    .card-h1 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    .card-img,
+    .card-h1 {
+        margin-bottom: 2rem;
+    }
+
+    .card-p {
+        margin-bottom: 1.875rem;
+        line-height: 1.5rem;
+    }
+
+    .bright-orange-card {
+        @extend .card;
+        background-color: $brightOrange;
+
+        button {
+            color: $brightOrange;
+
+            &:hover {
+                color: $veryLightGray;
+            }
+        }
+    }
+
+    .dark-cyan-card {
+        @extend .card;
+        background-color: $darkCyan;
+
+        button {
+            color: $darkCyan;
+
+            &:hover {
+                color: $veryLightGray;
+            }
+        }
+    }
+
+    .very-dark-cyan-card {
+        @extend .card;
+        background-color: $veryDarkCyan;
+
+        button {
+            color: $veryDarkCyan;
+
+            &:hover {
+                color: $veryLightGray;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+    button {
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .card {
+        padding: 3rem;
+        width: 25%;
+    }
+
+    .container {
+        padding: initial;
+        max-width: calc(1400px - 12.5%);
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: initial;
+        overflow: initial;
+
+        .card-h1 {
+            font-size: 3rem;
+        }
+
+        .card-p {
+            margin-bottom: 5rem;
+            line-height: 1.625rem;
+        }
+
+        .bright-orange-card {
+            border-top-left-radius: .5rem;
+            border-bottom-left-radius: .5rem;
+        }
+
+        .very-dark-cyan-card {
+            border-top-right-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+        }
+    }
+}
