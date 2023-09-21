@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [GitHub](https://github.com/mikailafsin/frontend-mentor-3-column-preview-card-component-solution)
+- Live Site URL: [Vercel](https://frontend-mentor-3-column-preview-card-component-solution-rho.vercel.app)
 
 ## My process
 
